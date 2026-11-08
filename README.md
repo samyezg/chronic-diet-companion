@@ -4,7 +4,7 @@ Hi, I'm Samye — a Flutter developer. This repo shows the core Dart + rule-engi
 
 Flutter source slice for a multi-disease meal companion: photo / text meal logging with rule-based red–yellow–green advice for gout, diabetes, and hypertension (heart-care).
 
-This repository is a **core Dart + rule-engine sample for architecture review**. It is **not** a complete store-ready project.
+This repository is a **public source architecture sample** of a shipped app. It is **not** a store-ready clone (native Android/iOS and cloud-function deploy trees are omitted). **All Rights Reserved** — viewing does not grant commercial reuse rights.
 
 **Not medical advice.** For dietary reference only; consult a clinician for clinical decisions.
 
