@@ -1,0 +1,1370 @@
+{
+  "meta": {
+    "disease": "diabetes",
+    "version": "1.0",
+    "total": 70,
+    "count_by_light": {
+      "红灯": 24,
+      "黄灯": 22,
+      "绿灯": 24
+    },
+    "modes": [
+      "标准控糖",
+      "强化控糖"
+    ],
+    "daily_carb_limit_g": {
+      "标准控糖": 180,
+      "强化控糖": 130
+    },
+    "gi_grade": {
+      "低": "绿灯",
+      "中": "黄灯",
+      "高": "红灯"
+    },
+    "gi_cutoffs": {
+      "低_max": 55,
+      "中_max": 70,
+      "高_min": 70.0001
+    },
+    "light_semantics": {
+      "红灯": "严格限量（非禁食）：适当少食+合理搭配",
+      "黄灯": "控制份量+搭配蔬菜蛋白",
+      "绿灯": "宜食，注意总量与烹调"
+    },
+    "source_note": "GI分级依据：国家卫健委《成人糖尿病食养指南（2023年版）》；中华医学会《中国2型糖尿病防治指南(2020年版)》；《国家基层糖尿病防治管理手册(2022)》食物GI表；《中国糖尿病防治指南(2024版)》脂肪/胆固醇提示。教材GI口径差异条目已标注gi_note。",
+    "disclaimer": "本规则库为饮食管理参考，不构成医疗建议；不能替代医生诊断与用药；GI受烹饪、搭配、个体代谢影响，数值为估算参考，正式发布前以《中国食物成分表》与食养指南表核定"
+  },
+  "rules": [
+    {
+      "rule_id": "D001",
+      "light": "红灯",
+      "category": "精制主食",
+      "name": "白米饭",
+      "examples": "白米饭、大米饭、白饭、米饭",
+      "gi": 84,
+      "carb_g_per100g": 25.9,
+      "mode": "全周期",
+      "basis": "GI 84（高），精制米升糖快",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "糙米饭、燕麦饭、杂粮饭",
+      "source": "基层手册/食养指南2023",
+      "keywords": [
+        "白米饭",
+        "大米饭",
+        "白饭",
+        "米饭"
+      ]
+    },
+    {
+      "rule_id": "D002",
+      "light": "红灯",
+      "category": "精制主食",
+      "name": "白馒头",
+      "examples": "白馒头、馒头、花卷、精粉馒头",
+      "gi": 85,
+      "carb_g_per100g": 47.0,
+      "mode": "全周期",
+      "basis": "GI 85（高），精制小麦粉升糖快",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "全麦馒头、杂粮馒头",
+      "source": "基层手册：馒头85",
+      "keywords": [
+        "白馒头",
+        "馒头",
+        "花卷",
+        "精粉馒头"
+      ]
+    },
+    {
+      "rule_id": "D003",
+      "light": "红灯",
+      "category": "精制主食",
+      "name": "白面包",
+      "examples": "白面包、法棍、吐司、面包",
+      "gi": 88,
+      "carb_g_per100g": 50.0,
+      "mode": "全周期",
+      "basis": "GI 88（高），精制小麦粉",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "全麦面包、黑麦面包",
+      "source": "教材/基层手册同类",
+      "keywords": [
+        "白面包",
+        "法棍",
+        "吐司",
+        "面包"
+      ]
+    },
+    {
+      "rule_id": "D004",
+      "light": "红灯",
+      "category": "精制主食",
+      "name": "糯米饭",
+      "examples": "糯米、糯米饭、粽子、糯米糕",
+      "gi": 87,
+      "carb_g_per100g": 36.0,
+      "mode": "全周期",
+      "basis": "GI 87（高），支链淀粉含量高",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "杂粮饭、糙米饭",
+      "source": "教材口径",
+      "keywords": [
+        "糯米",
+        "糯米饭",
+        "粽子",
+        "糯米糕"
+      ]
+    },
+    {
+      "rule_id": "D005",
+      "light": "红灯",
+      "category": "精制主食",
+      "name": "米粉河粉",
+      "examples": "米粉、河粉、肠粉、米线",
+      "gi": 82,
+      "carb_g_per100g": 24.0,
+      "mode": true,
+      "basis": "GI约82（高），精制米制品",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "荞麦面、杂粮面（限量）",
+      "source": "同类参考",
+      "keywords": [
+        "米粉",
+        "河粉",
+        "肠粉",
+        "米线"
+      ]
+    },
+    {
+      "rule_id": "D006",
+      "light": "红灯",
+      "category": "精制主食",
+      "name": "油条",
+      "examples": "油条、油饼、炸馒头",
+      "gi": 75,
+      "carb_g_per100g": 40.0,
+      "mode": "全周期",
+      "basis": "高GI+油炸高脂",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "蒸馒头（限量）、全麦饼",
+      "source": "食养指南高GI+脂肪供能限制",
+      "keywords": [
+        "油条",
+        "油饼",
+        "炸馒头"
+      ]
+    },
+    {
+      "rule_id": "D007",
+      "light": "红灯",
+      "category": "薯芋",
+      "name": "南瓜",
+      "examples": "南瓜、南瓜粥、蒸南瓜",
+      "gi": 75,
+      "carb_g_per100g": 5.3,
+      "mode": "全周期",
+      "basis": "GI 75（高），升糖较快",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "西兰花、叶菜；南瓜少量配蛋白",
+      "source": "基础营养学",
+      "keywords": [
+        "南瓜",
+        "南瓜粥",
+        "蒸南瓜"
+      ]
+    },
+    {
+      "rule_id": "D008",
+      "light": "红灯",
+      "category": "薯芋",
+      "name": "土豆泥",
+      "examples": "土豆泥、烤土豆、马铃薯泥",
+      "gi": 87,
+      "carb_g_per100g": 16.0,
+      "mode": "全周期",
+      "basis": "泥/烤后GI升高（约87）",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "蒸煮土豆（控量）、叶菜",
+      "source": "教材：熟土豆泥更高",
+      "keywords": [
+        "土豆泥",
+        "烤土豆",
+        "马铃薯泥"
+      ]
+    },
+    {
+      "rule_id": "D009",
+      "light": "红灯",
+      "category": "薯芋",
+      "name": "炸薯条",
+      "examples": "炸薯条、薯片、薯条",
+      "gi": 75,
+      "carb_g_per100g": 35.0,
+      "mode": "全周期",
+      "basis": "高GI+高脂",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "烤箱土豆条（少油）、蒸土豆",
+      "source": "高GI+脂肪限制",
+      "keywords": [
+        "炸薯条",
+        "薯片",
+        "薯条"
+      ]
+    },
+    {
+      "rule_id": "D010",
+      "light": "红灯",
+      "category": "糖类",
+      "name": "葡萄糖",
+      "examples": "葡萄糖、口服葡萄糖",
+      "gi": 100,
+      "carb_g_per100g": 100.0,
+      "mode": "全周期",
+      "basis": "GI 100，纯升糖",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "无糖代糖（遵医嘱）、白开水",
+      "source": "基层手册",
+      "keywords": [
+        "葡萄糖",
+        "口服葡萄糖"
+      ]
+    },
+    {
+      "rule_id": "D011",
+      "light": "红灯",
+      "category": "糖类",
+      "name": "麦芽糖",
+      "examples": "麦芽糖、饴糖",
+      "gi": 105,
+      "carb_g_per100g": 90.0,
+      "mode": "全周期",
+      "basis": "GI 105，纯升糖",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "无糖烹调",
+      "source": "基层手册",
+      "keywords": [
+        "麦芽糖",
+        "饴糖"
+      ]
+    },
+    {
+      "rule_id": "D012",
+      "light": "红灯",
+      "category": "糖类",
+      "name": "白砂糖",
+      "examples": "白砂糖、绵白糖、砂糖、蔗糖",
+      "gi": 84,
+      "carb_g_per100g": 99.0,
+      "mode": "全周期",
+      "basis": "GI 84，精制糖",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "代糖（遵医嘱）、减少甜味烹调",
+      "source": "基层手册",
+      "keywords": [
+        "白砂糖",
+        "绵白糖",
+        "砂糖",
+        "蔗糖"
+      ]
+    },
+    {
+      "rule_id": "D013",
+      "light": "红灯",
+      "category": "糖类",
+      "name": "蜂蜜",
+      "examples": "蜂蜜、蜜糖",
+      "gi": 73,
+      "carb_g_per100g": 80.0,
+      "mode": "全周期",
+      "basis": "GI 73（高），仍属游离糖",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "无糖酸奶、淡茶",
+      "source": "基层手册",
+      "keywords": [
+        "蜂蜜",
+        "蜜糖"
+      ]
+    },
+    {
+      "rule_id": "D014",
+      "light": "红灯",
+      "category": "饮料",
+      "name": "可乐雪碧",
+      "examples": "可乐、雪碧、汽水、碳酸饮料",
+      "gi": null,
+      "carb_g_per100g": 10.6,
+      "mode": "全周期",
+      "basis": "液态糖吸收快，升糖猛",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "无糖汽水（限量）、白开水、淡茶",
+      "source": "2020防治指南避免含糖饮料",
+      "keywords": [
+        "可乐",
+        "雪碧",
+        "汽水",
+        "碳酸饮料"
+      ],
+      "gi_note": "非GI驱动（液态糖/高糖脂等独立规则）"
+    },
+    {
+      "rule_id": "D015",
+      "light": "红灯",
+      "category": "饮料",
+      "name": "果汁",
+      "examples": "果汁、鲜榨果汁、橙汁、苹果汁",
+      "gi": null,
+      "carb_g_per100g": 12.0,
+      "mode": "全周期",
+      "basis": "果糖+葡萄糖混合，升糖快",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "整果（苹果等低GI）+饮水",
+      "source": "2020指南",
+      "keywords": [
+        "果汁",
+        "鲜榨果汁",
+        "橙汁",
+        "苹果汁"
+      ],
+      "gi_note": "非GI驱动（液态糖/高糖脂等独立规则）"
+    },
+    {
+      "rule_id": "D016",
+      "light": "红灯",
+      "category": "饮料",
+      "name": "奶茶",
+      "examples": "奶茶、珍珠奶茶、含糖奶茶",
+      "gi": null,
+      "carb_g_per100g": 18.0,
+      "mode": "全周期",
+      "basis": "糖+奶+淀粉珍珠，升糖负荷高",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "无糖茶/黑咖啡、低脂奶",
+      "source": "2020指南",
+      "keywords": [
+        "奶茶",
+        "珍珠奶茶",
+        "含糖奶茶"
+      ],
+      "gi_note": "非GI驱动（液态糖/高糖脂等独立规则）"
+    },
+    {
+      "rule_id": "D017",
+      "light": "红灯",
+      "category": "甜点",
+      "name": "蛋糕",
+      "examples": "蛋糕、奶油蛋糕、生日蛋糕",
+      "gi": 65,
+      "carb_g_per100g": 50.0,
+      "mode": true,
+      "basis": "高糖高脂",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "无糖酸奶+浆果（限量）",
+      "source": "脂肪供能限制+游离糖",
+      "keywords": [
+        "蛋糕",
+        "奶油蛋糕",
+        "生日蛋糕"
+      ]
+    },
+    {
+      "rule_id": "D018",
+      "light": "红灯",
+      "category": "甜点",
+      "name": "饼干",
+      "examples": "饼干、曲奇、威化",
+      "gi": 65,
+      "carb_g_per100g": 70.0,
+      "mode": true,
+      "basis": "精制粉+糖+脂",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "原味坚果（限量）",
+      "source": "高糖高脂",
+      "keywords": [
+        "饼干",
+        "曲奇",
+        "威化"
+      ]
+    },
+    {
+      "rule_id": "D019",
+      "light": "红灯",
+      "category": "甜点",
+      "name": "月饼",
+      "examples": "月饼、酥皮点心、蛋黄酥",
+      "gi": null,
+      "carb_g_per100g": 55.0,
+      "mode": "全周期",
+      "basis": "高糖高脂",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "水果+坚果少量",
+      "source": "高糖高脂独立规则",
+      "keywords": [
+        "月饼",
+        "酥皮点心",
+        "蛋黄酥"
+      ],
+      "gi_note": "非GI驱动（液态糖/高糖脂等独立规则）"
+    },
+    {
+      "rule_id": "D020",
+      "light": "红灯",
+      "category": "甜点",
+      "name": "冰淇淋",
+      "examples": "冰淇淋、甜筒、雪糕",
+      "gi": 61,
+      "carb_g_per100g": 24.0,
+      "mode": "全周期",
+      "basis": "高糖（GI约61，糖脂叠加）",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "无糖酸奶冷冻（自制限量）",
+      "source": "教材",
+      "keywords": [
+        "冰淇淋",
+        "甜筒",
+        "雪糕"
+      ]
+    },
+    {
+      "rule_id": "D021",
+      "light": "红灯",
+      "category": "水果",
+      "name": "西瓜",
+      "examples": "西瓜、西瓜汁",
+      "gi": 72,
+      "carb_g_per100g": 5.8,
+      "mode": "全周期",
+      "basis": "GI 72（高）",
+      "advice": "可少量配餐后食用，勿空腹大量；优先低GI水果",
+      "replacement": "苹果、柚子、草莓",
+      "source": "教材",
+      "keywords": [
+        "西瓜",
+        "西瓜汁"
+      ]
+    },
+    {
+      "rule_id": "D022",
+      "light": "红灯",
+      "category": "水果",
+      "name": "荔枝龙眼",
+      "examples": "荔枝、龙眼、桂圆",
+      "gi": 72,
+      "carb_g_per100g": 16.0,
+      "mode": true,
+      "basis": "高糖水果（GI约70+）",
+      "advice": "严格限量，优先低GI水果",
+      "replacement": "樱桃、草莓、柚子",
+      "source": "同类参考",
+      "keywords": [
+        "荔枝",
+        "龙眼",
+        "桂圆"
+      ]
+    },
+    {
+      "rule_id": "D023",
+      "light": "红灯",
+      "category": "果脯",
+      "name": "葡萄干蜜饯",
+      "examples": "葡萄干、蜜饯、果脯、话梅糖",
+      "gi": 64,
+      "carb_g_per100g": 75.0,
+      "mode": true,
+      "basis": "浓缩糖，升糖负荷高",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "新鲜水果（低GI）",
+      "source": "教材/浓缩糖",
+      "keywords": [
+        "葡萄干",
+        "蜜饯",
+        "果脯",
+        "话梅糖"
+      ]
+    },
+    {
+      "rule_id": "D024",
+      "light": "红灯",
+      "category": "酒酿",
+      "name": "酒酿醪糟",
+      "examples": "酒酿、醪糟、酒酿圆子",
+      "gi": null,
+      "carb_g_per100g": 20.0,
+      "mode": "全周期",
+      "basis": "糯米发酵+糖，升糖快",
+      "advice": "严格限量；适当少食并通过合理搭配（非禁食）；可用低GI主食/蛋白蔬菜替换或减半",
+      "replacement": "无糖豆浆、淡茶",
+      "source": "糯米+糖独立规则",
+      "keywords": [
+        "酒酿",
+        "醪糟",
+        "酒酿圆子"
+      ],
+      "gi_note": "非GI驱动（液态糖/高糖脂等独立规则）"
+    },
+    {
+      "rule_id": "D025",
+      "light": "黄灯",
+      "category": "主食",
+      "name": "糙米饭",
+      "examples": "糙米饭、糙米",
+      "gi": 56,
+      "carb_g_per100g": 23.0,
+      "mode": true,
+      "basis": "GI约56（中），优于精米；教材/手册存在56-78差异",
+      "advice": "控制份量并搭配蔬菜与优质蛋白；餐后可监测血糖",
+      "replacement": "杂豆饭、燕麦饭；控份量",
+      "source": "基层手册/教材取参考",
+      "keywords": [
+        "糙米饭",
+        "糙米"
+      ]
+    },
+    {
+      "rule_id": "D026",
+      "light": "黄灯",
+      "category": "主食",
+      "name": "荞麦面",
+      "examples": "荞麦面、荞麦面条",
+      "gi": 59,
+      "carb_g_per100g": 20.0,
+      "mode": "全周期",
+      "basis": "GI 59（中）",
+      "advice": "控制份量并搭配蔬菜与优质蛋白；餐后可监测血糖",
+      "replacement": "搭配大量蔬菜；控碗数",
+      "source": "基层手册",
+      "keywords": [
+        "荞麦面",
+        "荞麦面条"
+      ]
+    },
+    {
+      "rule_id": "D027",
+      "light": "黄灯",
+      "category": "主食",
+      "name": "麦片",
+      "examples": "麦片、即食麦片",
+      "gi": 64,
+      "carb_g_per100g": 66.0,
+      "mode": "全周期",
+      "basis": "GI 64（中）",
+      "advice": "控制份量并搭配蔬菜与优质蛋白；餐后可监测血糖；注意即食麦片是否加糖",
+      "replacement": "整粒燕麦（无糖）",
+      "source": "教材",
+      "keywords": [
+        "麦片",
+        "即食麦片"
+      ]
+    },
+    {
+      "rule_id": "D028",
+      "light": "黄灯",
+      "category": "主食",
+      "name": "燕麦粥",
+      "examples": "燕麦粥、麦片粥",
+      "gi": 55,
+      "carb_g_per100g": 12.0,
+      "mode": "全周期",
+      "basis": "GI 55（临界）",
+      "advice": "控制份量并搭配蔬菜与优质蛋白；餐后可监测血糖；临界低-中GI，餐后可监测",
+      "replacement": "整粒燕麦煮制、控量",
+      "source": "教材临界归黄灯",
+      "keywords": [
+        "燕麦粥",
+        "麦片粥"
+      ]
+    },
+    {
+      "rule_id": "D029",
+      "light": "黄灯",
+      "category": "主食",
+      "name": "小米粥",
+      "examples": "小米粥、小米",
+      "gi": 60,
+      "carb_g_per100g": 8.4,
+      "mode": "全周期",
+      "basis": "GI 60（中）",
+      "advice": "控制份量并搭配蔬菜与优质蛋白；餐后可监测血糖",
+      "replacement": "搭配蛋/奶/蔬菜；控碗数",
+      "source": "基层手册",
+      "keywords": [
+        "小米粥",
+        "小米"
+      ]
+    },
+    {
+      "rule_id": "D030",
+      "light": "黄灯",
+      "category": "主食",
+      "name": "玉米面粥",
+      "examples": "玉米面粥、棒子面粥",
+      "gi": 50,
+      "carb_g_per100g": 8.0,
+      "mode": "全周期",
+      "basis": "GI 50（临界偏低，粥类吸收较快）",
+      "advice": "控制份量并搭配蔬菜与优质蛋白；餐后可监测血糖；GI偏低但仍作粥类控量",
+      "replacement": "整粒玉米+蔬菜",
+      "source": "基层手册临界归黄灯",
+      "keywords": [
+        "玉米面粥",
+        "棒子面粥"
+      ]
+    },
+    {
+      "rule_id": "D031",
+      "light": "黄灯",
+      "category": "主食",
+      "name": "全麦面包",
+      "examples": "全麦面包、全麦吐司",
+      "gi": 58,
+      "carb_g_per100g": 40.0,
+      "mode": "全周期",
+      "basis": "GI 58（中）",
+      "advice": "控制份量并搭配蔬菜与优质蛋白；餐后可监测血糖",
+      "replacement": "配鸡蛋/黄瓜；看成分少糖",
+      "source": "教材",
+      "keywords": [
+        "全麦面包",
+        "全麦吐司"
+      ]
+    },
+    {
+      "rule_id": "D032",
+      "light": "黄灯",
+      "category": "薯芋",
+      "name": "红薯",
+      "examples": "红薯、甘薯、地瓜",
+      "gi": 54,
+      "carb_g_per100g": 23.1,
+      "mode": "全周期",
+      "basis": "GI 54（临界）",
+      "advice": "控制份量并搭配蔬菜与优质蛋白；餐后可监测血糖；临界低GI，控份量",
+      "replacement": "叶菜+蛋白为主；红薯作加餐限量",
+      "source": "基层手册临界归黄灯",
+      "keywords": [
+        "红薯",
+        "甘薯",
+        "地瓜"
+      ]
+    },
+    {
+      "rule_id": "D033",
+      "light": "黄灯",
+      "category": "薯芋",
+      "name": "土豆",
+      "examples": "土豆、马铃薯、蒸土豆、煮土豆",
+      "gi": 66,
+      "carb_g_per100g": 16.0,
+      "mode": "全周期",
+      "basis": "GI约62-66（中），蒸煮优于泥/烤",
+      "advice": "控制份量并搭配蔬菜与优质蛋白；餐后可监测血糖",
+      "replacement": "少油烹调；控块数",
+      "source": "教材",
+      "keywords": [
+        "土豆",
+        "马铃薯",
+        "蒸土豆",
+        "煮土豆"
+      ]
+    },
+    {
+      "rule_id": "D034",
+      "light": "黄灯",
+      "category": "薯芋",
+      "name": "玉米",
+      "examples": "玉米、煮玉米、甜玉米",
+      "gi": 55,
+      "carb_g_per100g": 19.0,
+      "mode": "全周期",
+      "basis": "GI 55（临界）",
+      "advice": "控制份量并搭配蔬菜与优质蛋白；餐后可监测血糖；临界",
+      "replacement": "搭配蛋白蔬菜",
+      "source": "教材临界归黄灯",
+      "keywords": [
+        "玉米",
+        "煮玉米",
+        "甜玉米"
+      ]
+    },
+    {
+      "rule_id": "D035",
+      "light": "黄灯",
+      "category": "豆类",
+      "name": "豌豆",
+      "examples": "豌豆、青豆",
+      "gi": 48,
+      "carb_g_per100g": 12.0,
+      "mode": "全周期",
+      "basis": "GI 48",
+      "advice": "控制份量并搭配蔬菜与优质蛋白；餐后可监测血糖；GI偏低但注意总量",
+      "replacement": "绿叶菜、黄瓜",
+      "source": "教材",
+      "keywords": [
+        "豌豆",
+        "青豆"
+      ]
+    },
+    {
+      "rule_id": "D036",
+      "light": "黄灯",
+      "category": "水果",
+      "name": "香蕉",
+      "examples": "香蕉",
+      "gi": 52,
+      "carb_g_per100g": 22.0,
+      "mode": "全周期",
+      "basis": "GI 52；熟透更高，控半根-1根",
+      "advice": "控制份量并搭配蔬菜与优质蛋白；餐后可监测血糖",
+      "replacement": "苹果、柚子",
+      "source": "基层手册/教材",
+      "keywords": [
+        "香蕉"
+      ]
+    },
+    {
+      "rule_id": "D037",
+      "light": "黄灯",
+      "category": "水果",
+      "name": "芒果",
+      "examples": "芒果",
+      "gi": 55,
+      "carb_g_per100g": 14.0,
+      "mode": true,
+      "basis": "GI约51-55",
+      "advice": "控制份量并搭配蔬菜与优质蛋白；餐后可监测血糖；临界",
+      "replacement": "浆果类、柚子",
+      "source": "教材临界",
+      "keywords": [
+        "芒果"
+      ]
+    },
+    {
+      "rule_id": "D038",
+      "light": "黄灯",
+      "category": "水果",
+      "name": "猕猴桃",
+      "examples": "猕猴桃、奇异果",
+      "gi": 52,
+      "carb_g_per100g": 12.0,
+      "mode": "全周期",
+      "basis": "GI 52",
+      "advice": "控制份量并搭配蔬菜与优质蛋白；餐后可监测血糖",
+      "replacement": "餐间适量1个",
+      "source": "教材",
+      "keywords": [
+        "猕猴桃",
+        "奇异果"
+      ]
+    },
+    {
+      "rule_id": "D039",
+      "light": "黄灯",
+      "category": "水果",
+      "name": "菠萝",
+      "examples": "菠萝、凤梨",
+      "gi": 66,
+      "carb_g_per100g": 12.0,
+      "mode": "全周期",
+      "basis": "GI 66（中）",
+      "advice": "控制份量并搭配蔬菜与优质蛋白；餐后可监测血糖",
+      "replacement": "苹果、草莓",
+      "source": "教材",
+      "keywords": [
+        "菠萝",
+        "凤梨"
+      ]
+    },
+    {
+      "rule_id": "D040",
+      "light": "黄灯",
+      "category": "水果",
+      "name": "葡萄",
+      "examples": "葡萄、提子",
+      "gi": 53,
+      "carb_g_per100g": 10.0,
+      "mode": true,
+      "basis": "GI约43-53，控串量",
+      "advice": "控制份量并搭配蔬菜与优质蛋白；餐后可监测血糖",
+      "replacement": "柚子、樱桃",
+      "source": "教材差异取中",
+      "keywords": [
+        "葡萄",
+        "提子"
+      ]
+    },
+    {
+      "rule_id": "D041",
+      "light": "黄灯",
+      "category": "水果",
+      "name": "木瓜",
+      "examples": "木瓜、熟木瓜",
+      "gi": 59,
+      "carb_g_per100g": 8.0,
+      "mode": "全周期",
+      "basis": "GI 59（中）",
+      "advice": "控制份量并搭配蔬菜与优质蛋白；餐后可监测血糖",
+      "replacement": "苹果、梨",
+      "source": "教材",
+      "keywords": [
+        "木瓜",
+        "熟木瓜"
+      ]
+    },
+    {
+      "rule_id": "D042",
+      "light": "黄灯",
+      "category": "高糖脂",
+      "name": "巧克力",
+      "examples": "巧克力、黑巧克力",
+      "gi": 49,
+      "carb_g_per100g": 50.0,
+      "mode": "全周期",
+      "basis": "GI 49但糖脂高",
+      "advice": "GI不高但糖脂高，解馋限量（小块）",
+      "replacement": "原味坚果少量",
+      "source": "教材+脂肪供能限制",
+      "keywords": [
+        "巧克力",
+        "黑巧克力"
+      ]
+    },
+    {
+      "rule_id": "D043",
+      "light": "黄灯",
+      "category": "高糖脂",
+      "name": "甜炼乳",
+      "examples": "甜炼乳、炼乳",
+      "gi": null,
+      "carb_g_per100g": 55.0,
+      "mode": "全周期",
+      "basis": "浓缩糖",
+      "advice": "糖浓缩，烹调少用或不用",
+      "replacement": "低脂奶、无糖酸奶",
+      "source": "独立规则",
+      "keywords": [
+        "甜炼乳",
+        "炼乳"
+      ],
+      "gi_note": "非GI驱动（液态糖/高糖脂等独立规则）"
+    },
+    {
+      "rule_id": "D044",
+      "light": "黄灯",
+      "category": "调味",
+      "name": "含糖酱料",
+      "examples": "甜面酱、番茄酱、糖醋汁、蚝油",
+      "gi": null,
+      "carb_g_per100g": 20.0,
+      "mode": "全周期",
+      "basis": "隐形糖来源",
+      "advice": "控勺量；优先香辛料少糖酱",
+      "replacement": "葱姜蒜、醋、芥末（无糖）",
+      "source": "隐形糖独立规则",
+      "keywords": [
+        "甜面酱",
+        "番茄酱",
+        "糖醋汁",
+        "蚝油"
+      ],
+      "gi_note": "非GI驱动（液态糖/高糖脂等独立规则）"
+    },
+    {
+      "rule_id": "D045",
+      "light": "黄灯",
+      "category": "主食",
+      "name": "藕粉",
+      "examples": "藕粉、藕粉糊",
+      "gi": 60,
+      "carb_g_per100g": 80.0,
+      "mode": true,
+      "basis": "GI约60，淀粉糊吸收快",
+      "advice": "控制份量并搭配蔬菜与优质蛋白；餐后可监测血糖",
+      "replacement": "改食蔬菜+蛋白",
+      "source": "淀粉糊",
+      "keywords": [
+        "藕粉",
+        "藕粉糊"
+      ]
+    },
+    {
+      "rule_id": "D046",
+      "light": "黄灯",
+      "category": "主食",
+      "name": "汤圆",
+      "examples": "汤圆、白汤圆、甜汤圆、元宵",
+      "gi": 80,
+      "carb_g_per100g": 35.0,
+      "mode": true,
+      "basis": "GI约80+（糯米）",
+      "advice": "糯米+糖，升糖快，严格控个数（临界红灯）",
+      "replacement": "无糖豆浆、低GI水果",
+      "source": "临界归黄灯并强提示",
+      "keywords": [
+        "汤圆",
+        "白汤圆",
+        "甜汤圆",
+        "元宵"
+      ]
+    },
+    {
+      "rule_id": "D047",
+      "light": "绿灯",
+      "category": "全谷豆",
+      "name": "燕麦",
+      "examples": "燕麦、整粒燕麦、纯燕麦",
+      "gi": 50,
+      "carb_g_per100g": 61.0,
+      "mode": "全周期",
+      "basis": "GI<55，可溶性纤维有利控糖",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）；选无糖纯燕麦",
+      "replacement": "作主食部分替换精米",
+      "source": "食养指南低GI",
+      "keywords": [
+        "燕麦",
+        "整粒燕麦",
+        "纯燕麦"
+      ]
+    },
+    {
+      "rule_id": "D048",
+      "light": "绿灯",
+      "category": "全谷豆",
+      "name": "绿豆",
+      "examples": "绿豆、绿豆汤",
+      "gi": 27,
+      "carb_g_per100g": 55.0,
+      "mode": "全周期",
+      "basis": "GI 27（低）",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）；汤少加糖",
+      "replacement": "可作杂粮搭配",
+      "source": "基层手册",
+      "keywords": [
+        "绿豆",
+        "绿豆汤"
+      ]
+    },
+    {
+      "rule_id": "D049",
+      "light": "绿灯",
+      "category": "全谷豆",
+      "name": "红豆",
+      "examples": "红豆、赤小豆、红豆汤",
+      "gi": 28,
+      "carb_g_per100g": 55.0,
+      "mode": "全周期",
+      "basis": "GI约26-30（低）",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）；少加糖",
+      "replacement": "杂粮饭搭配",
+      "source": "基层手册",
+      "keywords": [
+        "红豆",
+        "赤小豆",
+        "红豆汤"
+      ]
+    },
+    {
+      "rule_id": "D050",
+      "light": "绿灯",
+      "category": "全谷豆",
+      "name": "黄豆",
+      "examples": "黄豆、大豆",
+      "gi": 18,
+      "carb_g_per100g": 18.0,
+      "mode": "全周期",
+      "basis": "GI 18（低）",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）",
+      "replacement": "豆腐、豆浆（无糖）",
+      "source": "基层手册",
+      "keywords": [
+        "黄豆",
+        "大豆"
+      ]
+    },
+    {
+      "rule_id": "D051",
+      "light": "绿灯",
+      "category": "全谷豆",
+      "name": "豆腐",
+      "examples": "豆腐、豆干、北豆腐、南豆腐",
+      "gi": 35,
+      "carb_g_per100g": 2.0,
+      "mode": "全周期",
+      "basis": "GI约32-42（低），优质植物蛋白",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）",
+      "replacement": "清蒸/煮，少油炸",
+      "source": "基层手册/教材",
+      "keywords": [
+        "豆腐",
+        "豆干",
+        "北豆腐",
+        "南豆腐"
+      ]
+    },
+    {
+      "rule_id": "D052",
+      "light": "绿灯",
+      "category": "全谷豆",
+      "name": "扁豆",
+      "examples": "扁豆、四季豆",
+      "gi": 26,
+      "carb_g_per100g": 8.0,
+      "mode": "全周期",
+      "basis": "GI 26（低）",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）",
+      "replacement": "焯水清炒",
+      "source": "基层手册",
+      "keywords": [
+        "扁豆",
+        "四季豆"
+      ]
+    },
+    {
+      "rule_id": "D053",
+      "light": "绿灯",
+      "category": "水果",
+      "name": "苹果",
+      "examples": "苹果",
+      "gi": 36,
+      "carb_g_per100g": 13.5,
+      "mode": "全周期",
+      "basis": "GI 36（低）",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）；一整果优于果汁",
+      "replacement": "餐间1个中等大小",
+      "source": "教材",
+      "keywords": [
+        "苹果"
+      ]
+    },
+    {
+      "rule_id": "D054",
+      "light": "绿灯",
+      "category": "水果",
+      "name": "梨",
+      "examples": "梨、香梨",
+      "gi": 36,
+      "carb_g_per100g": 13.0,
+      "mode": "全周期",
+      "basis": "GI 36（低）",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）",
+      "replacement": "餐间适量",
+      "source": "教材",
+      "keywords": [
+        "梨",
+        "香梨"
+      ]
+    },
+    {
+      "rule_id": "D055",
+      "light": "绿灯",
+      "category": "水果",
+      "name": "樱桃",
+      "examples": "樱桃、车厘子",
+      "gi": 22,
+      "carb_g_per100g": 10.0,
+      "mode": "全周期",
+      "basis": "GI 22（低）",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）",
+      "replacement": "一小把",
+      "source": "低GI水果",
+      "keywords": [
+        "樱桃",
+        "车厘子"
+      ]
+    },
+    {
+      "rule_id": "D056",
+      "light": "绿灯",
+      "category": "水果",
+      "name": "柚子",
+      "examples": "柚子、葡萄柚",
+      "gi": 25,
+      "carb_g_per100g": 9.0,
+      "mode": "全周期",
+      "basis": "GI 25（低）",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）",
+      "replacement": "餐间适量",
+      "source": "低GI水果",
+      "keywords": [
+        "柚子",
+        "葡萄柚"
+      ]
+    },
+    {
+      "rule_id": "D057",
+      "light": "绿灯",
+      "category": "水果",
+      "name": "草莓蓝莓",
+      "examples": "草莓、蓝莓、浆果",
+      "gi": 40,
+      "carb_g_per100g": 7.0,
+      "mode": "全周期",
+      "basis": "GI约40（低）",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）",
+      "replacement": "无糖酸奶搭配",
+      "source": "低GI浆果",
+      "keywords": [
+        "草莓",
+        "蓝莓",
+        "浆果"
+      ]
+    },
+    {
+      "rule_id": "D058",
+      "light": "绿灯",
+      "category": "水果",
+      "name": "桃李",
+      "examples": "桃、李子、水蜜桃",
+      "gi": 35,
+      "carb_g_per100g": 10.0,
+      "mode": true,
+      "basis": "GI约28-42（低）",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）",
+      "replacement": "餐间1个",
+      "source": "低GI",
+      "keywords": [
+        "桃",
+        "李子",
+        "水蜜桃"
+      ]
+    },
+    {
+      "rule_id": "D059",
+      "light": "绿灯",
+      "category": "水果",
+      "name": "橙",
+      "examples": "橙、橙子、脐橙",
+      "gi": 43,
+      "carb_g_per100g": 11.0,
+      "mode": "全周期",
+      "basis": "GI 43（低）",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）；整果优于橙汁",
+      "replacement": "勿用果汁替代",
+      "source": "教材",
+      "keywords": [
+        "橙",
+        "橙子",
+        "脐橙"
+      ]
+    },
+    {
+      "rule_id": "D060",
+      "light": "绿灯",
+      "category": "蔬菜",
+      "name": "绿叶菜",
+      "examples": "菠菜、油菜、生菜、青菜",
+      "gi": 15,
+      "carb_g_per100g": 3.0,
+      "mode": "全周期",
+      "basis": "GI<15，非淀粉蔬菜",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）",
+      "replacement": "每餐占盘1/2",
+      "source": "食养指南",
+      "keywords": [
+        "菠菜",
+        "油菜",
+        "生菜",
+        "青菜",
+        "上海青",
+        "油麦菜"
+      ]
+    },
+    {
+      "rule_id": "D061",
+      "light": "绿灯",
+      "category": "蔬菜",
+      "name": "黄瓜",
+      "examples": "黄瓜、拍黄瓜、凉拌黄瓜",
+      "gi": 15,
+      "carb_g_per100g": 2.0,
+      "mode": "全周期",
+      "basis": "GI约15",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）",
+      "replacement": "少糖醋腌制",
+      "source": "非淀粉蔬菜",
+      "keywords": [
+        "黄瓜",
+        "拍黄瓜",
+        "凉拌黄瓜"
+      ]
+    },
+    {
+      "rule_id": "D062",
+      "light": "绿灯",
+      "category": "蔬菜",
+      "name": "番茄",
+      "examples": "番茄、西红柿、番茄炒蛋",
+      "gi": 30,
+      "carb_g_per100g": 3.5,
+      "mode": "全周期",
+      "basis": "GI<30",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）",
+      "replacement": "少糖烹调",
+      "source": "非淀粉蔬菜",
+      "keywords": [
+        "番茄",
+        "西红柿",
+        "番茄炒蛋"
+      ]
+    },
+    {
+      "rule_id": "D063",
+      "light": "绿灯",
+      "category": "蔬菜",
+      "name": "西兰花白菜",
+      "examples": "西兰花、芹菜、白菜、包菜",
+      "gi": 20,
+      "carb_g_per100g": 3.0,
+      "mode": "全周期",
+      "basis": "GI<30，非淀粉蔬菜",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）",
+      "replacement": "清炒/焯水",
+      "source": "非淀粉蔬菜",
+      "keywords": [
+        "西兰花",
+        "芹菜",
+        "白菜",
+        "包菜",
+        "手撕包菜"
+      ]
+    },
+    {
+      "rule_id": "D064",
+      "light": "绿灯",
+      "category": "蛋",
+      "name": "鸡蛋",
+      "examples": "鸡蛋、鸭蛋、水煮蛋、蒸蛋羹",
+      "gi": 0,
+      "carb_g_per100g": 1.0,
+      "mode": "全周期",
+      "basis": "几乎不含碳水，优质蛋白",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）",
+      "replacement": "水煮/蒸，少油炸",
+      "source": "防治指南蛋白来源",
+      "keywords": [
+        "鸡蛋",
+        "鸭蛋",
+        "水煮蛋",
+        "蒸蛋羹"
+      ]
+    },
+    {
+      "rule_id": "D065",
+      "light": "绿灯",
+      "category": "蛋白",
+      "name": "瘦肉禽肉",
+      "examples": "瘦肉、鸡胸肉、去皮鸡肉、牛肉",
+      "gi": 0,
+      "carb_g_per100g": 0.0,
+      "mode": "全周期",
+      "basis": "不含碳水；注意脂肪与胆固醇",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）；控总量与肥肉",
+      "replacement": "去皮去肥，少油",
+      "source": "2024指南脂肪/胆固醇提示",
+      "keywords": [
+        "瘦肉",
+        "鸡胸肉",
+        "去皮鸡肉",
+        "牛肉",
+        "猪肉"
+      ]
+    },
+    {
+      "rule_id": "D066",
+      "light": "绿灯",
+      "category": "蛋白",
+      "name": "鱼虾",
+      "examples": "鱼、虾、清蒸鱼、白灼虾",
+      "gi": 0,
+      "carb_g_per100g": 0.0,
+      "mode": "全周期",
+      "basis": "不含碳水，优质蛋白",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）",
+      "replacement": "清蒸/白灼优于油炸",
+      "source": "防治指南",
+      "keywords": [
+        "鱼",
+        "虾",
+        "清蒸鱼",
+        "白灼虾",
+        "鲈鱼"
+      ]
+    },
+    {
+      "rule_id": "D067",
+      "light": "绿灯",
+      "category": "乳品",
+      "name": "低脂牛奶",
+      "examples": "低脂牛奶、纯牛奶、牛奶",
+      "gi": 30,
+      "carb_g_per100g": 5.0,
+      "mode": "全周期",
+      "basis": "GI约27-32（低）",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）；选无糖",
+      "replacement": "勿加糖",
+      "source": "基层手册",
+      "keywords": [
+        "低脂牛奶",
+        "纯牛奶",
+        "牛奶"
+      ]
+    },
+    {
+      "rule_id": "D068",
+      "light": "绿灯",
+      "category": "乳品",
+      "name": "无糖酸奶",
+      "examples": "无糖酸奶、原味酸奶",
+      "gi": 25,
+      "carb_g_per100g": 5.0,
+      "mode": "全周期",
+      "basis": "GI<30；避免风味加糖酸奶",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）",
+      "replacement": "配浆果",
+      "source": "低GI乳品",
+      "keywords": [
+        "无糖酸奶",
+        "原味酸奶"
+      ]
+    },
+    {
+      "rule_id": "D069",
+      "light": "绿灯",
+      "category": "坚果",
+      "name": "坚果",
+      "examples": "花生、腰果、杏仁、坚果",
+      "gi": 20,
+      "carb_g_per100g": 15.0,
+      "mode": "全周期",
+      "basis": "GI约14-25（低）",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）；一把为限（高能量）",
+      "replacement": "原味无糖盐",
+      "source": "基层手册",
+      "keywords": [
+        "花生",
+        "腰果",
+        "杏仁",
+        "坚果"
+      ]
+    },
+    {
+      "rule_id": "D070",
+      "light": "绿灯",
+      "category": "饮品",
+      "name": "白开水淡茶",
+      "examples": "白开水、淡茶、绿茶、黑咖啡",
+      "gi": 0,
+      "carb_g_per100g": 0.0,
+      "mode": "全周期",
+      "basis": "GI 0，每日足量饮水",
+      "advice": "宜食；注意总量与烹调方式（少油少糖）",
+      "replacement": "勿加糖奶精",
+      "source": "食养指南饮水建议",
+      "keywords": [
+        "白开水",
+        "淡茶",
+        "绿茶",
+        "黑咖啡",
+        "无糖咖啡"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+Copyright (c) 2026 Ye Zhiguo (叶志国). All Rights Reserved.
+
+Product: Chronic Disease Diet Companion / 慢病餐伴侣
+(sub-brands: Gout / Diabetes / Heart-care meal companions).
+
+This repository is provided for authorized architecture review only.
+
+You may NOT, without prior written permission from the copyright holder:
+  - Redistribute, sublicense, or re-publish this source
+  - Use this source commercially, including as a competing product
+  - Remove or alter copyright, disclaimer, or attribution notices
+  - Represent this project as medical advice, diagnosis, or treatment
+
+THIS SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND.
+It is a dietary reference tool only and does not constitute medical advice.
+The author is not liable for health outcomes, misuse of AI recognition,
+or decisions made based on traffic-light suggestions.
+
+Native Android/iOS projects, cloud-function deployment configs, signing
+materials, and store packaging are intentionally omitted from this repository.

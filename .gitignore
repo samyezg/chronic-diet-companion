@@ -1,0 +1,41 @@
+# Dart / Flutter
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+*.iml
+.idea/
+
+# IDE
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets / local config (should never be committed)
+.env
+.env.*
+*.key
+*.pem
+*.jks
+*.keystore
+android/key.properties
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+**/secrets/
+**/mapping.txt
+
+# Runtime / local experiment artifacts
+engine/text_candidate_pool.json
+engine/text_hit_streak.json
+**/__pycache__/
+*.pyc
+
+# Generated
+*.g.dart
+*.freezed.dart

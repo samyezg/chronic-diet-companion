@@ -1,0 +1,678 @@
+{
+  "meta": {
+    "disease": "hypertension",
+    "version": "1.0",
+    "unit": "每100g可食部；cholesterol_mg 为主累计指标；sodium_mg/sat_fat_g 为提示字段",
+    "note": "MVP 护心含量库（48种），数值为估算参考，正式版以《中国食物成分表》核定；钠受烹饪影响大，打卡累计主看胆固醇",
+    "fields": [
+      "food_id",
+      "name",
+      "alias",
+      "sodium_mg",
+      "cholesterol_mg",
+      "sat_fat_g",
+      "kcal",
+      "protein_g",
+      "fat_g"
+    ],
+    "primary_metric": "cholesterol_mg",
+    "total": 48
+  },
+  "foods": [
+    {
+      "food_id": "HH001",
+      "name": "咸菜",
+      "alias": [
+        "榨菜",
+        "腌菜"
+      ],
+      "sodium_mg": 5400,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 0.0,
+      "kcal": 30,
+      "protein_g": 2.0,
+      "fat_g": 0.5
+    },
+    {
+      "food_id": "HH002",
+      "name": "腐乳",
+      "alias": [
+        "南乳"
+      ],
+      "sodium_mg": 2200,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 0.5,
+      "kcal": 150,
+      "protein_g": 12.0,
+      "fat_g": 8.0
+    },
+    {
+      "food_id": "HH003",
+      "name": "腊肉",
+      "alias": [
+        "腊肠"
+      ],
+      "sodium_mg": 1800,
+      "cholesterol_mg": 80,
+      "sat_fat_g": 8.0,
+      "kcal": 450,
+      "protein_g": 20.0,
+      "fat_g": 40.0
+    },
+    {
+      "food_id": "HH004",
+      "name": "培根",
+      "alias": [
+        "火腿",
+        "香肠"
+      ],
+      "sodium_mg": 1500,
+      "cholesterol_mg": 70,
+      "sat_fat_g": 7.0,
+      "kcal": 400,
+      "protein_g": 15.0,
+      "fat_g": 35.0
+    },
+    {
+      "food_id": "HH005",
+      "name": "午餐肉",
+      "alias": [
+        "火腿肠"
+      ],
+      "sodium_mg": 1200,
+      "cholesterol_mg": 60,
+      "sat_fat_g": 6.0,
+      "kcal": 280,
+      "protein_g": 12.0,
+      "fat_g": 24.0
+    },
+    {
+      "food_id": "HH006",
+      "name": "猪脑",
+      "alias": [
+        "脑花"
+      ],
+      "sodium_mg": 180,
+      "cholesterol_mg": 2571,
+      "sat_fat_g": 2.0,
+      "kcal": 130,
+      "protein_g": 10.0,
+      "fat_g": 9.0
+    },
+    {
+      "food_id": "HH007",
+      "name": "猪肝",
+      "alias": [
+        "鸡肝",
+        "猪肾"
+      ],
+      "sodium_mg": 180,
+      "cholesterol_mg": 288,
+      "sat_fat_g": 1.5,
+      "kcal": 129,
+      "protein_g": 19.0,
+      "fat_g": 4.0
+    },
+    {
+      "food_id": "HH008",
+      "name": "蟹黄",
+      "alias": [
+        "鱼籽"
+      ],
+      "sodium_mg": 400,
+      "cholesterol_mg": 460,
+      "sat_fat_g": 2.5,
+      "kcal": 190,
+      "protein_g": 14.0,
+      "fat_g": 12.0
+    },
+    {
+      "food_id": "HH009",
+      "name": "鱿鱼",
+      "alias": [
+        "墨鱼"
+      ],
+      "sodium_mg": 300,
+      "cholesterol_mg": 268,
+      "sat_fat_g": 0.5,
+      "kcal": 90,
+      "protein_g": 17.0,
+      "fat_g": 1.0
+    },
+    {
+      "food_id": "HH010",
+      "name": "五花肉",
+      "alias": [
+        "肥肉",
+        "红烧肉"
+      ],
+      "sodium_mg": 50,
+      "cholesterol_mg": 80,
+      "sat_fat_g": 12.0,
+      "kcal": 395,
+      "protein_g": 13.0,
+      "fat_g": 37.0
+    },
+    {
+      "food_id": "HH011",
+      "name": "猪油",
+      "alias": [
+        "黄油",
+        "奶油"
+      ],
+      "sodium_mg": 10,
+      "cholesterol_mg": 100,
+      "sat_fat_g": 40.0,
+      "kcal": 900,
+      "protein_g": 0.0,
+      "fat_g": 99.0
+    },
+    {
+      "food_id": "HH012",
+      "name": "油条",
+      "alias": [
+        "油饼"
+      ],
+      "sodium_mg": 500,
+      "cholesterol_mg": 20,
+      "sat_fat_g": 4.0,
+      "kcal": 386,
+      "protein_g": 7.0,
+      "fat_g": 17.0
+    },
+    {
+      "food_id": "HH013",
+      "name": "炸鸡",
+      "alias": [
+        "炸薯条",
+        "薯条"
+      ],
+      "sodium_mg": 600,
+      "cholesterol_mg": 50,
+      "sat_fat_g": 5.0,
+      "kcal": 280,
+      "protein_g": 15.0,
+      "fat_g": 16.0
+    },
+    {
+      "food_id": "HH014",
+      "name": "方便面",
+      "alias": [
+        "泡面"
+      ],
+      "sodium_mg": 1500,
+      "cholesterol_mg": 20,
+      "sat_fat_g": 4.0,
+      "kcal": 470,
+      "protein_g": 9.0,
+      "fat_g": 20.0
+    },
+    {
+      "food_id": "HH015",
+      "name": "薯片",
+      "alias": [
+        "膨化食品"
+      ],
+      "sodium_mg": 800,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 5.0,
+      "kcal": 540,
+      "protein_g": 5.0,
+      "fat_g": 35.0
+    },
+    {
+      "food_id": "HH016",
+      "name": "冰淇淋",
+      "alias": [
+        "甜筒",
+        "雪糕"
+      ],
+      "sodium_mg": 80,
+      "cholesterol_mg": 50,
+      "sat_fat_g": 8.0,
+      "kcal": 180,
+      "protein_g": 3.0,
+      "fat_g": 8.0
+    },
+    {
+      "food_id": "HH017",
+      "name": "瘦猪肉",
+      "alias": [
+        "里脊"
+      ],
+      "sodium_mg": 60,
+      "cholesterol_mg": 81,
+      "sat_fat_g": 2.5,
+      "kcal": 143,
+      "protein_g": 20.0,
+      "fat_g": 6.0
+    },
+    {
+      "food_id": "HH018",
+      "name": "瘦牛肉",
+      "alias": [
+        "牛肉"
+      ],
+      "sodium_mg": 60,
+      "cholesterol_mg": 84,
+      "sat_fat_g": 2.0,
+      "kcal": 125,
+      "protein_g": 20.0,
+      "fat_g": 4.0
+    },
+    {
+      "food_id": "HH019",
+      "name": "鸡蛋",
+      "alias": [
+        "水煮蛋",
+        "蒸蛋羹"
+      ],
+      "sodium_mg": 140,
+      "cholesterol_mg": 585,
+      "sat_fat_g": 2.7,
+      "kcal": 144,
+      "protein_g": 13.3,
+      "fat_g": 8.8
+    },
+    {
+      "food_id": "HH020",
+      "name": "虾",
+      "alias": [
+        "基围虾",
+        "白灼虾"
+      ],
+      "sodium_mg": 200,
+      "cholesterol_mg": 150,
+      "sat_fat_g": 0.3,
+      "kcal": 93,
+      "protein_g": 18.0,
+      "fat_g": 1.0
+    },
+    {
+      "food_id": "HH021",
+      "name": "全脂牛奶",
+      "alias": [
+        "全脂奶"
+      ],
+      "sodium_mg": 50,
+      "cholesterol_mg": 15,
+      "sat_fat_g": 2.2,
+      "kcal": 66,
+      "protein_g": 3.0,
+      "fat_g": 4.0
+    },
+    {
+      "food_id": "HH022",
+      "name": "白米饭",
+      "alias": [
+        "米饭",
+        "大米饭",
+        "白饭"
+      ],
+      "sodium_mg": 5,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 0.1,
+      "kcal": 116,
+      "protein_g": 2.6,
+      "fat_g": 0.3
+    },
+    {
+      "food_id": "HH023",
+      "name": "馒头",
+      "alias": [
+        "花卷",
+        "白馒头"
+      ],
+      "sodium_mg": 300,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 0.5,
+      "kcal": 223,
+      "protein_g": 7.0,
+      "fat_g": 1.1
+    },
+    {
+      "food_id": "HH024",
+      "name": "饺子",
+      "alias": [
+        "肉包",
+        "煎饺"
+      ],
+      "sodium_mg": 400,
+      "cholesterol_mg": 40,
+      "sat_fat_g": 3.0,
+      "kcal": 220,
+      "protein_g": 9.0,
+      "fat_g": 8.0
+    },
+    {
+      "food_id": "HH025",
+      "name": "葡萄",
+      "alias": [
+        "芒果",
+        "提子"
+      ],
+      "sodium_mg": 5,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 0.1,
+      "kcal": 44,
+      "protein_g": 0.5,
+      "fat_g": 0.2
+    },
+    {
+      "food_id": "HH026",
+      "name": "猪蹄",
+      "alias": [
+        "鸡爪",
+        "凤爪"
+      ],
+      "sodium_mg": 80,
+      "cholesterol_mg": 80,
+      "sat_fat_g": 4.0,
+      "kcal": 260,
+      "protein_g": 18.0,
+      "fat_g": 20.0
+    },
+    {
+      "food_id": "HH027",
+      "name": "咸味饼干",
+      "alias": [
+        "苏打饼干"
+      ],
+      "sodium_mg": 700,
+      "cholesterol_mg": 10,
+      "sat_fat_g": 3.0,
+      "kcal": 430,
+      "protein_g": 8.0,
+      "fat_g": 12.0
+    },
+    {
+      "food_id": "HH028",
+      "name": "挂面",
+      "alias": [
+        "切面"
+      ],
+      "sodium_mg": 500,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 0.3,
+      "kcal": 350,
+      "protein_g": 11.0,
+      "fat_g": 1.0
+    },
+    {
+      "food_id": "HH029",
+      "name": "老火汤",
+      "alias": [
+        "猪骨汤"
+      ],
+      "sodium_mg": 400,
+      "cholesterol_mg": 30,
+      "sat_fat_g": 4.0,
+      "kcal": 50,
+      "protein_g": 3.0,
+      "fat_g": 4.0
+    },
+    {
+      "food_id": "HH030",
+      "name": "咸鸭蛋",
+      "alias": [
+        "咸蛋"
+      ],
+      "sodium_mg": 1200,
+      "cholesterol_mg": 650,
+      "sat_fat_g": 4.0,
+      "kcal": 180,
+      "protein_g": 13.0,
+      "fat_g": 13.0
+    },
+    {
+      "food_id": "HH031",
+      "name": "奶油汤",
+      "alias": [
+        "芝士汤"
+      ],
+      "sodium_mg": 500,
+      "cholesterol_mg": 40,
+      "sat_fat_g": 6.0,
+      "kcal": 80,
+      "protein_g": 2.0,
+      "fat_g": 6.0
+    },
+    {
+      "food_id": "HH032",
+      "name": "菠菜",
+      "alias": [
+        "油菜",
+        "生菜",
+        "上海青"
+      ],
+      "sodium_mg": 40,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 0.1,
+      "kcal": 24,
+      "protein_g": 2.6,
+      "fat_g": 0.3
+    },
+    {
+      "food_id": "HH033",
+      "name": "黄瓜",
+      "alias": [
+        "番茄",
+        "西红柿",
+        "茄子"
+      ],
+      "sodium_mg": 10,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 0.1,
+      "kcal": 16,
+      "protein_g": 0.8,
+      "fat_g": 0.2
+    },
+    {
+      "food_id": "HH034",
+      "name": "西兰花",
+      "alias": [
+        "芹菜",
+        "白菜"
+      ],
+      "sodium_mg": 40,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 0.1,
+      "kcal": 27,
+      "protein_g": 2.5,
+      "fat_g": 0.3
+    },
+    {
+      "food_id": "HH035",
+      "name": "香菇",
+      "alias": [
+        "蘑菇",
+        "木耳"
+      ],
+      "sodium_mg": 5,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 0.1,
+      "kcal": 26,
+      "protein_g": 2.0,
+      "fat_g": 0.3
+    },
+    {
+      "food_id": "HH036",
+      "name": "海带",
+      "alias": [
+        "紫菜"
+      ],
+      "sodium_mg": 300,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 0.2,
+      "kcal": 15,
+      "protein_g": 1.0,
+      "fat_g": 0.1
+    },
+    {
+      "food_id": "HH037",
+      "name": "苹果",
+      "alias": [
+        "梨",
+        "橙"
+      ],
+      "sodium_mg": 5,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 0.1,
+      "kcal": 53,
+      "protein_g": 0.4,
+      "fat_g": 0.2
+    },
+    {
+      "food_id": "HH038",
+      "name": "香蕉",
+      "alias": [
+        "猕猴桃",
+        "草莓"
+      ],
+      "sodium_mg": 5,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 0.1,
+      "kcal": 91,
+      "protein_g": 1.4,
+      "fat_g": 0.2
+    },
+    {
+      "food_id": "HH039",
+      "name": "燕麦",
+      "alias": [
+        "糙米",
+        "全麦"
+      ],
+      "sodium_mg": 5,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 0.5,
+      "kcal": 367,
+      "protein_g": 15.0,
+      "fat_g": 6.7
+    },
+    {
+      "food_id": "HH040",
+      "name": "绿豆",
+      "alias": [
+        "红豆",
+        "芸豆"
+      ],
+      "sodium_mg": 5,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 0.2,
+      "kcal": 316,
+      "protein_g": 21.0,
+      "fat_g": 0.8
+    },
+    {
+      "food_id": "HH041",
+      "name": "低脂牛奶",
+      "alias": [
+        "脱脂牛奶"
+      ],
+      "sodium_mg": 50,
+      "cholesterol_mg": 5,
+      "sat_fat_g": 0.5,
+      "kcal": 40,
+      "protein_g": 3.3,
+      "fat_g": 1.0
+    },
+    {
+      "food_id": "HH042",
+      "name": "无糖酸奶",
+      "alias": [
+        "原味酸奶"
+      ],
+      "sodium_mg": 50,
+      "cholesterol_mg": 8,
+      "sat_fat_g": 1.0,
+      "kcal": 60,
+      "protein_g": 3.5,
+      "fat_g": 2.0
+    },
+    {
+      "food_id": "HH043",
+      "name": "豆腐",
+      "alias": [
+        "豆浆",
+        "豆干"
+      ],
+      "sodium_mg": 10,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 0.5,
+      "kcal": 82,
+      "protein_g": 8.1,
+      "fat_g": 3.7
+    },
+    {
+      "food_id": "HH044",
+      "name": "鲈鱼",
+      "alias": [
+        "清蒸鱼",
+        "清蒸鲈鱼"
+      ],
+      "sodium_mg": 50,
+      "cholesterol_mg": 50,
+      "sat_fat_g": 0.8,
+      "kcal": 105,
+      "protein_g": 18.0,
+      "fat_g": 3.0
+    },
+    {
+      "food_id": "HH045",
+      "name": "三文鱼",
+      "alias": [
+        "深海鱼",
+        "鳕鱼"
+      ],
+      "sodium_mg": 50,
+      "cholesterol_mg": 60,
+      "sat_fat_g": 1.5,
+      "kcal": 140,
+      "protein_g": 20.0,
+      "fat_g": 6.0
+    },
+    {
+      "food_id": "HH046",
+      "name": "鸡胸",
+      "alias": [
+        "去皮鸡胸",
+        "鸭胸"
+      ],
+      "sodium_mg": 50,
+      "cholesterol_mg": 70,
+      "sat_fat_g": 1.0,
+      "kcal": 133,
+      "protein_g": 24.0,
+      "fat_g": 5.0
+    },
+    {
+      "food_id": "HH047",
+      "name": "鸡蛋清",
+      "alias": [
+        "蛋白"
+      ],
+      "sodium_mg": 160,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 0.0,
+      "kcal": 50,
+      "protein_g": 11.0,
+      "fat_g": 0.2
+    },
+    {
+      "food_id": "HH048",
+      "name": "花生",
+      "alias": [
+        "核桃",
+        "杏仁",
+        "坚果"
+      ],
+      "sodium_mg": 5,
+      "cholesterol_mg": 0,
+      "sat_fat_g": 5.0,
+      "kcal": 563,
+      "protein_g": 24.0,
+      "fat_g": 44.0
+    }
+  ]
+}

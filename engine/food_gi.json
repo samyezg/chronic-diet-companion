@@ -1,0 +1,637 @@
+{
+  "meta": {
+    "disease": "diabetes",
+    "version": "1.0",
+    "unit": "每100g可食部；gi为血糖生成指数；carb_g为碳水(g/100g)",
+    "note": "MVP血糖/碳水库（50种），GI参考卫健委食养指南2023与基层手册2022；营养为估算值；含糖饮料等gi可为null",
+    "fields": [
+      "food_id",
+      "name",
+      "alias",
+      "gi",
+      "carb_g",
+      "kcal",
+      "protein_g",
+      "fat_g"
+    ],
+    "total": 50
+  },
+  "foods": [
+    {
+      "food_id": "DG001",
+      "name": "白米饭",
+      "alias": [
+        "米饭",
+        "大米饭",
+        "白饭"
+      ],
+      "gi": 84,
+      "carb_g": 25.9,
+      "kcal": 116,
+      "protein_g": 2.6,
+      "fat_g": 0.3
+    },
+    {
+      "food_id": "DG002",
+      "name": "馒头",
+      "alias": [
+        "白馒头",
+        "花卷"
+      ],
+      "gi": 85,
+      "carb_g": 47.0,
+      "kcal": 223,
+      "protein_g": 7.0,
+      "fat_g": 1.1
+    },
+    {
+      "food_id": "DG003",
+      "name": "白面包",
+      "alias": [
+        "吐司",
+        "法棍"
+      ],
+      "gi": 88,
+      "carb_g": 50.0,
+      "kcal": 265,
+      "protein_g": 8.0,
+      "fat_g": 3.0
+    },
+    {
+      "food_id": "DG004",
+      "name": "糯米饭",
+      "alias": [
+        "粽子",
+        "糯米"
+      ],
+      "gi": 87,
+      "carb_g": 36.0,
+      "kcal": 180,
+      "protein_g": 4.0,
+      "fat_g": 0.5
+    },
+    {
+      "food_id": "DG005",
+      "name": "米粉",
+      "alias": [
+        "河粉",
+        "肠粉",
+        "米线"
+      ],
+      "gi": 82,
+      "carb_g": 24.0,
+      "kcal": 110,
+      "protein_g": 2.0,
+      "fat_g": 0.2
+    },
+    {
+      "food_id": "DG006",
+      "name": "油条",
+      "alias": [
+        "油饼"
+      ],
+      "gi": 75,
+      "carb_g": 40.0,
+      "kcal": 386,
+      "protein_g": 7.0,
+      "fat_g": 17.0
+    },
+    {
+      "food_id": "DG007",
+      "name": "南瓜",
+      "alias": [
+        "蒸南瓜"
+      ],
+      "gi": 75,
+      "carb_g": 5.3,
+      "kcal": 22,
+      "protein_g": 0.7,
+      "fat_g": 0.1
+    },
+    {
+      "food_id": "DG008",
+      "name": "土豆",
+      "alias": [
+        "马铃薯",
+        "蒸土豆",
+        "煮土豆"
+      ],
+      "gi": 66,
+      "carb_g": 16.0,
+      "kcal": 76,
+      "protein_g": 2.0,
+      "fat_g": 0.2
+    },
+    {
+      "food_id": "DG009",
+      "name": "炸薯条",
+      "alias": [
+        "薯条",
+        "薯片"
+      ],
+      "gi": 75,
+      "carb_g": 35.0,
+      "kcal": 298,
+      "protein_g": 3.5,
+      "fat_g": 15.0
+    },
+    {
+      "food_id": "DG010",
+      "name": "可乐",
+      "alias": [
+        "雪碧",
+        "汽水"
+      ],
+      "gi": null,
+      "carb_g": 10.6,
+      "kcal": 43,
+      "protein_g": 0.0,
+      "fat_g": 0.0
+    },
+    {
+      "food_id": "DG011",
+      "name": "果汁",
+      "alias": [
+        "鲜榨果汁",
+        "橙汁"
+      ],
+      "gi": null,
+      "carb_g": 12.0,
+      "kcal": 48,
+      "protein_g": 0.4,
+      "fat_g": 0.1
+    },
+    {
+      "food_id": "DG012",
+      "name": "奶茶",
+      "alias": [
+        "珍珠奶茶"
+      ],
+      "gi": null,
+      "carb_g": 18.0,
+      "kcal": 80,
+      "protein_g": 1.5,
+      "fat_g": 2.0
+    },
+    {
+      "food_id": "DG013",
+      "name": "西瓜",
+      "alias": [],
+      "gi": 72,
+      "carb_g": 5.8,
+      "kcal": 25,
+      "protein_g": 0.5,
+      "fat_g": 0.1
+    },
+    {
+      "food_id": "DG014",
+      "name": "荔枝",
+      "alias": [
+        "龙眼"
+      ],
+      "gi": 72,
+      "carb_g": 16.0,
+      "kcal": 66,
+      "protein_g": 0.9,
+      "fat_g": 0.2
+    },
+    {
+      "food_id": "DG015",
+      "name": "蜂蜜",
+      "alias": [],
+      "gi": 73,
+      "carb_g": 80.0,
+      "kcal": 321,
+      "protein_g": 0.4,
+      "fat_g": 0.0
+    },
+    {
+      "food_id": "DG016",
+      "name": "白砂糖",
+      "alias": [
+        "绵白糖",
+        "砂糖"
+      ],
+      "gi": 84,
+      "carb_g": 99.0,
+      "kcal": 400,
+      "protein_g": 0.0,
+      "fat_g": 0.0
+    },
+    {
+      "food_id": "DG017",
+      "name": "蛋糕",
+      "alias": [
+        "奶油蛋糕"
+      ],
+      "gi": 65,
+      "carb_g": 50.0,
+      "kcal": 350,
+      "protein_g": 5.0,
+      "fat_g": 15.0
+    },
+    {
+      "food_id": "DG018",
+      "name": "冰淇淋",
+      "alias": [
+        "甜筒",
+        "雪糕"
+      ],
+      "gi": 61,
+      "carb_g": 24.0,
+      "kcal": 180,
+      "protein_g": 3.0,
+      "fat_g": 8.0
+    },
+    {
+      "food_id": "DG019",
+      "name": "糙米饭",
+      "alias": [
+        "糙米"
+      ],
+      "gi": 56,
+      "carb_g": 23.0,
+      "kcal": 111,
+      "protein_g": 2.5,
+      "fat_g": 0.8
+    },
+    {
+      "food_id": "DG020",
+      "name": "荞麦面",
+      "alias": [],
+      "gi": 59,
+      "carb_g": 20.0,
+      "kcal": 100,
+      "protein_g": 4.0,
+      "fat_g": 0.5
+    },
+    {
+      "food_id": "DG021",
+      "name": "燕麦粥",
+      "alias": [
+        "麦片粥"
+      ],
+      "gi": 55,
+      "carb_g": 12.0,
+      "kcal": 60,
+      "protein_g": 2.5,
+      "fat_g": 1.5
+    },
+    {
+      "food_id": "DG022",
+      "name": "燕麦",
+      "alias": [
+        "整粒燕麦",
+        "纯燕麦"
+      ],
+      "gi": 50,
+      "carb_g": 61.0,
+      "kcal": 367,
+      "protein_g": 15.0,
+      "fat_g": 6.7
+    },
+    {
+      "food_id": "DG023",
+      "name": "小米粥",
+      "alias": [
+        "小米"
+      ],
+      "gi": 60,
+      "carb_g": 8.4,
+      "kcal": 46,
+      "protein_g": 1.4,
+      "fat_g": 0.3
+    },
+    {
+      "food_id": "DG024",
+      "name": "全麦面包",
+      "alias": [
+        "全麦吐司"
+      ],
+      "gi": 58,
+      "carb_g": 40.0,
+      "kcal": 240,
+      "protein_g": 9.0,
+      "fat_g": 3.5
+    },
+    {
+      "food_id": "DG025",
+      "name": "红薯",
+      "alias": [
+        "甘薯",
+        "地瓜"
+      ],
+      "gi": 54,
+      "carb_g": 23.1,
+      "kcal": 99,
+      "protein_g": 1.1,
+      "fat_g": 0.2
+    },
+    {
+      "food_id": "DG026",
+      "name": "玉米",
+      "alias": [
+        "煮玉米",
+        "甜玉米"
+      ],
+      "gi": 55,
+      "carb_g": 19.0,
+      "kcal": 90,
+      "protein_g": 3.0,
+      "fat_g": 1.0
+    },
+    {
+      "food_id": "DG027",
+      "name": "香蕉",
+      "alias": [],
+      "gi": 52,
+      "carb_g": 22.0,
+      "kcal": 91,
+      "protein_g": 1.4,
+      "fat_g": 0.2
+    },
+    {
+      "food_id": "DG028",
+      "name": "芒果",
+      "alias": [],
+      "gi": 55,
+      "carb_g": 14.0,
+      "kcal": 60,
+      "protein_g": 0.8,
+      "fat_g": 0.2
+    },
+    {
+      "food_id": "DG029",
+      "name": "猕猴桃",
+      "alias": [
+        "奇异果"
+      ],
+      "gi": 52,
+      "carb_g": 12.0,
+      "kcal": 56,
+      "protein_g": 0.8,
+      "fat_g": 0.6
+    },
+    {
+      "food_id": "DG030",
+      "name": "菠萝",
+      "alias": [
+        "凤梨"
+      ],
+      "gi": 66,
+      "carb_g": 12.0,
+      "kcal": 44,
+      "protein_g": 0.5,
+      "fat_g": 0.1
+    },
+    {
+      "food_id": "DG031",
+      "name": "葡萄",
+      "alias": [
+        "提子"
+      ],
+      "gi": 53,
+      "carb_g": 10.0,
+      "kcal": 44,
+      "protein_g": 0.5,
+      "fat_g": 0.2
+    },
+    {
+      "food_id": "DG032",
+      "name": "苹果",
+      "alias": [],
+      "gi": 36,
+      "carb_g": 13.5,
+      "kcal": 53,
+      "protein_g": 0.4,
+      "fat_g": 0.2
+    },
+    {
+      "food_id": "DG033",
+      "name": "梨",
+      "alias": [
+        "香梨"
+      ],
+      "gi": 36,
+      "carb_g": 13.0,
+      "kcal": 51,
+      "protein_g": 0.3,
+      "fat_g": 0.1
+    },
+    {
+      "food_id": "DG034",
+      "name": "樱桃",
+      "alias": [
+        "车厘子"
+      ],
+      "gi": 22,
+      "carb_g": 10.0,
+      "kcal": 46,
+      "protein_g": 1.0,
+      "fat_g": 0.2
+    },
+    {
+      "food_id": "DG035",
+      "name": "柚子",
+      "alias": [],
+      "gi": 25,
+      "carb_g": 9.0,
+      "kcal": 42,
+      "protein_g": 0.8,
+      "fat_g": 0.1
+    },
+    {
+      "food_id": "DG036",
+      "name": "草莓",
+      "alias": [
+        "蓝莓",
+        "浆果"
+      ],
+      "gi": 40,
+      "carb_g": 7.0,
+      "kcal": 30,
+      "protein_g": 0.8,
+      "fat_g": 0.2
+    },
+    {
+      "food_id": "DG037",
+      "name": "橙",
+      "alias": [
+        "橙子",
+        "脐橙"
+      ],
+      "gi": 43,
+      "carb_g": 11.0,
+      "kcal": 48,
+      "protein_g": 0.9,
+      "fat_g": 0.1
+    },
+    {
+      "food_id": "DG038",
+      "name": "豆腐",
+      "alias": [
+        "豆干",
+        "北豆腐"
+      ],
+      "gi": 35,
+      "carb_g": 2.0,
+      "kcal": 82,
+      "protein_g": 8.1,
+      "fat_g": 3.7
+    },
+    {
+      "food_id": "DG039",
+      "name": "绿豆",
+      "alias": [],
+      "gi": 27,
+      "carb_g": 55.0,
+      "kcal": 316,
+      "protein_g": 21.0,
+      "fat_g": 0.8
+    },
+    {
+      "food_id": "DG040",
+      "name": "黄豆",
+      "alias": [
+        "大豆"
+      ],
+      "gi": 18,
+      "carb_g": 18.0,
+      "kcal": 390,
+      "protein_g": 35.0,
+      "fat_g": 16.0
+    },
+    {
+      "food_id": "DG041",
+      "name": "鸡蛋",
+      "alias": [
+        "水煮蛋",
+        "蒸蛋羹",
+        "鸭蛋"
+      ],
+      "gi": 0,
+      "carb_g": 1.3,
+      "kcal": 144,
+      "protein_g": 13.3,
+      "fat_g": 8.8
+    },
+    {
+      "food_id": "DG042",
+      "name": "鸡胸肉",
+      "alias": [
+        "瘦肉",
+        "去皮鸡肉"
+      ],
+      "gi": 0,
+      "carb_g": 0.0,
+      "kcal": 133,
+      "protein_g": 24.0,
+      "fat_g": 5.0
+    },
+    {
+      "food_id": "DG043",
+      "name": "鲈鱼",
+      "alias": [
+        "清蒸鲈鱼",
+        "鱼",
+        "虾"
+      ],
+      "gi": 0,
+      "carb_g": 0.0,
+      "kcal": 105,
+      "protein_g": 18.0,
+      "fat_g": 3.0
+    },
+    {
+      "food_id": "DG044",
+      "name": "低脂牛奶",
+      "alias": [
+        "牛奶",
+        "纯牛奶"
+      ],
+      "gi": 30,
+      "carb_g": 5.0,
+      "kcal": 40,
+      "protein_g": 3.3,
+      "fat_g": 1.0
+    },
+    {
+      "food_id": "DG045",
+      "name": "无糖酸奶",
+      "alias": [
+        "原味酸奶"
+      ],
+      "gi": 25,
+      "carb_g": 5.0,
+      "kcal": 60,
+      "protein_g": 3.5,
+      "fat_g": 2.0
+    },
+    {
+      "food_id": "DG046",
+      "name": "花生",
+      "alias": [
+        "杏仁",
+        "腰果",
+        "坚果"
+      ],
+      "gi": 20,
+      "carb_g": 15.0,
+      "kcal": 563,
+      "protein_g": 24.0,
+      "fat_g": 44.0
+    },
+    {
+      "food_id": "DG047",
+      "name": "菠菜",
+      "alias": [
+        "青菜",
+        "油菜",
+        "生菜",
+        "上海青"
+      ],
+      "gi": 15,
+      "carb_g": 3.0,
+      "kcal": 24,
+      "protein_g": 2.6,
+      "fat_g": 0.3
+    },
+    {
+      "food_id": "DG048",
+      "name": "黄瓜",
+      "alias": [
+        "拍黄瓜"
+      ],
+      "gi": 15,
+      "carb_g": 2.0,
+      "kcal": 16,
+      "protein_g": 0.8,
+      "fat_g": 0.2
+    },
+    {
+      "food_id": "DG049",
+      "name": "番茄",
+      "alias": [
+        "西红柿"
+      ],
+      "gi": 30,
+      "carb_g": 3.5,
+      "kcal": 19,
+      "protein_g": 0.9,
+      "fat_g": 0.2
+    },
+    {
+      "food_id": "DG050",
+      "name": "西兰花",
+      "alias": [
+        "白菜",
+        "芹菜"
+      ],
+      "gi": 20,
+      "carb_g": 3.0,
+      "kcal": 27,
+      "protein_g": 2.5,
+      "fat_g": 0.3
+    }
+  ]
+}

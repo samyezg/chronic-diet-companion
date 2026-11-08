@@ -1,0 +1,479 @@
+{
+  "meta": {
+    "version": "1.0",
+    "unit": "每100g可食部；purine_mg 为嘌呤含量(mg/100g)",
+    "note": "MVP嘌呤含量库（46种高频食物），嘌呤数值依据《成人高尿酸血症与痛风食养指南（2024年版）》常见食物嘌呤含量表与《痛风及高尿酸血症基层诊疗指南（2019年）》植物性食物嘌呤含量表；营养数值为估算值仅供参考",
+    "fields": [
+      "food_id",
+      "name",
+      "alias",
+      "purine_mg",
+      "kcal",
+      "protein_g",
+      "fat_g",
+      "carb_g"
+    ]
+  },
+  "foods": [
+    {
+      "food_id": "P001",
+      "name": "米饭",
+      "alias": ["白米饭", "粥"],
+      "purine_mg": 15,
+      "kcal": 116,
+      "protein_g": 2.6,
+      "fat_g": 0.3,
+      "carb_g": 25.9
+    },
+    {
+      "food_id": "P002",
+      "name": "面条",
+      "alias": ["挂面", "汤面"],
+      "purine_mg": 20,
+      "kcal": 110,
+      "protein_g": 3.9,
+      "fat_g": 0.4,
+      "carb_g": 22.0
+    },
+    {
+      "food_id": "P003",
+      "name": "馒头",
+      "alias": ["花卷", "白馒头"],
+      "purine_mg": 20,
+      "kcal": 223,
+      "protein_g": 7.0,
+      "fat_g": 1.1,
+      "carb_g": 47.0
+    },
+    {
+      "food_id": "P004",
+      "name": "燕麦",
+      "alias": ["燕麦片", "杂粮饭"],
+      "purine_mg": 40,
+      "kcal": 367,
+      "protein_g": 15.0,
+      "fat_g": 6.7,
+      "carb_g": 61.0
+    },
+    {
+      "food_id": "P005",
+      "name": "鸡蛋",
+      "alias": ["水煮蛋", "蒸蛋羹", "鸭蛋"],
+      "purine_mg": 8,
+      "kcal": 144,
+      "protein_g": 13.3,
+      "fat_g": 8.8,
+      "carb_g": 2.8
+    },
+    {
+      "food_id": "P006",
+      "name": "牛奶",
+      "alias": ["纯奶", "低脂奶", "酸奶"],
+      "purine_mg": 10,
+      "kcal": 54,
+      "protein_g": 3.0,
+      "fat_g": 3.2,
+      "carb_g": 3.4
+    },
+    {
+      "food_id": "P007",
+      "name": "猪肝",
+      "alias": ["炒猪肝", "卤猪肝"],
+      "purine_mg": 288,
+      "kcal": 129,
+      "protein_g": 19.3,
+      "fat_g": 3.5,
+      "carb_g": 5.0
+    },
+    {
+      "food_id": "P008",
+      "name": "猪腰",
+      "alias": ["腰花", "爆炒腰花"],
+      "purine_mg": 250,
+      "kcal": 96,
+      "protein_g": 15.4,
+      "fat_g": 3.2,
+      "carb_g": 1.4
+    },
+    {
+      "food_id": "P009",
+      "name": "猪肉",
+      "alias": ["瘦肉", "红烧肉", "回锅肉"],
+      "purine_mg": 120,
+      "kcal": 143,
+      "protein_g": 20.3,
+      "fat_g": 6.2,
+      "carb_g": 1.5
+    },
+    {
+      "food_id": "P010",
+      "name": "牛肉",
+      "alias": ["牛腩", "卤牛肉"],
+      "purine_mg": 120,
+      "kcal": 125,
+      "protein_g": 19.9,
+      "fat_g": 4.2,
+      "carb_g": 2.0
+    },
+    {
+      "food_id": "P011",
+      "name": "羊肉",
+      "alias": ["涮羊肉", "羊肉串"],
+      "purine_mg": 120,
+      "kcal": 203,
+      "protein_g": 19.0,
+      "fat_g": 14.1,
+      "carb_g": 0.0
+    },
+    {
+      "food_id": "P012",
+      "name": "鸡肉",
+      "alias": ["鸡腿", "鸡胸肉", "宫保鸡丁"],
+      "purine_mg": 100,
+      "kcal": 167,
+      "protein_g": 19.3,
+      "fat_g": 9.4,
+      "carb_g": 1.3
+    },
+    {
+      "food_id": "P013",
+      "name": "鸭肉",
+      "alias": ["烤鸭", "鹅肉"],
+      "purine_mg": 110,
+      "kcal": 240,
+      "protein_g": 15.5,
+      "fat_g": 19.7,
+      "carb_g": 0.2
+    },
+    {
+      "food_id": "P014",
+      "name": "猪血",
+      "alias": ["鸭血", "血豆腐"],
+      "purine_mg": 30,
+      "kcal": 55,
+      "protein_g": 12.2,
+      "fat_g": 0.3,
+      "carb_g": 0.9
+    },
+    {
+      "food_id": "P015",
+      "name": "腊肠",
+      "alias": ["培根", "火腿", "午餐肉"],
+      "purine_mg": 100,
+      "kcal": 508,
+      "protein_g": 22.0,
+      "fat_g": 48.0,
+      "carb_g": 4.0
+    },
+    {
+      "food_id": "P016",
+      "name": "沙丁鱼",
+      "alias": ["沙丁鱼罐头"],
+      "purine_mg": 260,
+      "kcal": 131,
+      "protein_g": 19.8,
+      "fat_g": 5.6,
+      "carb_g": 0.0
+    },
+    {
+      "food_id": "P017",
+      "name": "鲭鱼",
+      "alias": ["青花鱼"],
+      "purine_mg": 210,
+      "kcal": 205,
+      "protein_g": 18.6,
+      "fat_g": 13.9,
+      "carb_g": 0.0
+    },
+    {
+      "food_id": "P018",
+      "name": "鲤鱼",
+      "alias": ["红烧鲤鱼"],
+      "purine_mg": 140,
+      "kcal": 109,
+      "protein_g": 17.6,
+      "fat_g": 4.1,
+      "carb_g": 0.0
+    },
+    {
+      "food_id": "P019",
+      "name": "草鱼",
+      "alias": ["水煮鱼", "酸菜鱼"],
+      "purine_mg": 130,
+      "kcal": 113,
+      "protein_g": 16.6,
+      "fat_g": 5.2,
+      "carb_g": 0.0
+    },
+    {
+      "food_id": "P020",
+      "name": "鲈鱼",
+      "alias": ["清蒸鲈鱼"],
+      "purine_mg": 110,
+      "kcal": 105,
+      "protein_g": 18.6,
+      "fat_g": 3.4,
+      "carb_g": 0.0
+    },
+    {
+      "food_id": "P021",
+      "name": "带鱼",
+      "alias": ["香煎带鱼"],
+      "purine_mg": 130,
+      "kcal": 127,
+      "protein_g": 17.7,
+      "fat_g": 4.9,
+      "carb_g": 3.1
+    },
+    {
+      "food_id": "P022",
+      "name": "三文鱼",
+      "alias": ["三文鱼刺身"],
+      "purine_mg": 100,
+      "kcal": 208,
+      "protein_g": 20.0,
+      "fat_g": 13.0,
+      "carb_g": 0.0
+    },
+    {
+      "food_id": "P023",
+      "name": "多宝鱼",
+      "alias": ["比目鱼"],
+      "purine_mg": 60,
+      "kcal": 90,
+      "protein_g": 18.0,
+      "fat_g": 2.0,
+      "carb_g": 0.0
+    },
+    {
+      "food_id": "P024",
+      "name": "生蚝",
+      "alias": ["牡蛎", "烤生蚝"],
+      "purine_mg": 190,
+      "kcal": 73,
+      "protein_g": 9.0,
+      "fat_g": 2.3,
+      "carb_g": 4.1
+    },
+    {
+      "food_id": "P025",
+      "name": "蛤蜊",
+      "alias": ["花甲", "炒花甲"],
+      "purine_mg": 180,
+      "kcal": 62,
+      "protein_g": 10.1,
+      "fat_g": 1.1,
+      "carb_g": 2.8
+    },
+    {
+      "food_id": "P026",
+      "name": "鱿鱼",
+      "alias": ["墨鱼", "铁板鱿鱼"],
+      "purine_mg": 170,
+      "kcal": 84,
+      "protein_g": 15.6,
+      "fat_g": 1.4,
+      "carb_g": 3.0
+    },
+    {
+      "food_id": "P027",
+      "name": "虾",
+      "alias": ["基围虾", "白灼虾", "油焖大虾"],
+      "purine_mg": 160,
+      "kcal": 93,
+      "protein_g": 18.6,
+      "fat_g": 0.8,
+      "carb_g": 2.8
+    },
+    {
+      "food_id": "P028",
+      "name": "螃蟹",
+      "alias": ["大闸蟹", "香辣蟹"],
+      "purine_mg": 170,
+      "kcal": 103,
+      "protein_g": 17.5,
+      "fat_g": 2.6,
+      "carb_g": 2.3
+    },
+    {
+      "food_id": "P029",
+      "name": "海参",
+      "alias": ["即食海参"],
+      "purine_mg": 25,
+      "kcal": 78,
+      "protein_g": 16.5,
+      "fat_g": 0.2,
+      "carb_g": 2.5
+    },
+    {
+      "food_id": "P030",
+      "name": "海蜇皮",
+      "alias": ["凉拌海蜇"],
+      "purine_mg": 20,
+      "kcal": 33,
+      "protein_g": 3.7,
+      "fat_g": 0.3,
+      "carb_g": 3.8
+    },
+    {
+      "food_id": "P031",
+      "name": "豆腐",
+      "alias": ["豆干", "内酯豆腐"],
+      "purine_mg": 70,
+      "kcal": 82,
+      "protein_g": 8.1,
+      "fat_g": 3.7,
+      "carb_g": 4.2
+    },
+    {
+      "food_id": "P032",
+      "name": "豆浆",
+      "alias": ["无糖豆浆"],
+      "purine_mg": 60,
+      "kcal": 31,
+      "protein_g": 3.0,
+      "fat_g": 1.6,
+      "carb_g": 1.2
+    },
+    {
+      "food_id": "P033",
+      "name": "黄豆",
+      "alias": ["大豆", "炒黄豆"],
+      "purine_mg": 180,
+      "kcal": 359,
+      "protein_g": 35.0,
+      "fat_g": 16.0,
+      "carb_g": 34.2
+    },
+    {
+      "food_id": "P034",
+      "name": "绿豆",
+      "alias": ["红豆", "绿豆粥"],
+      "purine_mg": 100,
+      "kcal": 329,
+      "protein_g": 21.6,
+      "fat_g": 0.8,
+      "carb_g": 62.0
+    },
+    {
+      "food_id": "P035",
+      "name": "紫菜",
+      "alias": ["海苔", "寿司海苔"],
+      "purine_mg": 400,
+      "kcal": 207,
+      "protein_g": 26.7,
+      "fat_g": 1.1,
+      "carb_g": 44.1
+    },
+    {
+      "food_id": "P036",
+      "name": "香菇(鲜)",
+      "alias": ["鲜香菇", "金针菇", "口蘑"],
+      "purine_mg": 60,
+      "kcal": 26,
+      "protein_g": 2.2,
+      "fat_g": 0.3,
+      "carb_g": 5.2
+    },
+    {
+      "food_id": "P037",
+      "name": "菠菜",
+      "alias": ["清炒菠菜", "凉拌菠菜"],
+      "purine_mg": 60,
+      "kcal": 28,
+      "protein_g": 2.6,
+      "fat_g": 0.3,
+      "carb_g": 4.5
+    },
+    {
+      "food_id": "P038",
+      "name": "芦笋",
+      "alias": ["清炒芦笋"],
+      "purine_mg": 60,
+      "kcal": 22,
+      "protein_g": 2.4,
+      "fat_g": 0.1,
+      "carb_g": 4.9
+    },
+    {
+      "food_id": "P039",
+      "name": "黄瓜",
+      "alias": ["拍黄瓜", "凉拌黄瓜"],
+      "purine_mg": 20,
+      "kcal": 16,
+      "protein_g": 0.8,
+      "fat_g": 0.2,
+      "carb_g": 3.6
+    },
+    {
+      "food_id": "P040",
+      "name": "胡萝卜",
+      "alias": ["炒胡萝卜"],
+      "purine_mg": 25,
+      "kcal": 39,
+      "protein_g": 1.0,
+      "fat_g": 0.2,
+      "carb_g": 8.8
+    },
+    {
+      "food_id": "P041",
+      "name": "青菜",
+      "alias": ["油菜", "生菜", "白菜", "油麦菜", "炒青菜"],
+      "purine_mg": 30,
+      "kcal": 15,
+      "protein_g": 1.5,
+      "fat_g": 0.3,
+      "carb_g": 2.4
+    },
+    {
+      "food_id": "P042",
+      "name": "樱桃",
+      "alias": [],
+      "purine_mg": 10,
+      "kcal": 46,
+      "protein_g": 1.1,
+      "fat_g": 0.2,
+      "carb_g": 10.2
+    },
+    {
+      "food_id": "P043",
+      "name": "番茄",
+      "alias": ["西红柿", "圣女果"],
+      "purine_mg": 25,
+      "kcal": 20,
+      "protein_g": 0.9,
+      "fat_g": 0.2,
+      "carb_g": 4.0
+    },
+    {
+      "food_id": "P044",
+      "name": "茄子",
+      "alias": ["清炒茄子", "红烧茄子"],
+      "purine_mg": 25,
+      "kcal": 23,
+      "protein_g": 1.1,
+      "fat_g": 0.2,
+      "carb_g": 4.9
+    },
+    {
+      "food_id": "P045",
+      "name": "橙子",
+      "alias": ["甜橙"],
+      "purine_mg": 10,
+      "kcal": 48,
+      "protein_g": 0.8,
+      "fat_g": 0.2,
+      "carb_g": 11.1
+    },
+    {
+      "food_id": "P046",
+      "name": "苹果",
+      "alias": ["红富士"],
+      "purine_mg": 10,
+      "kcal": 53,
+      "protein_g": 0.4,
+      "fat_g": 0.2,
+      "carb_g": 13.8
+    }
+  ]
+}
