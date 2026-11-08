@@ -1,5 +1,7 @@
 # Chronic Disease Diet Companion（慢病餐伴侣）
 
+Hi, I'm Samye — a Flutter developer. This repo shows the core Dart + rule-engine architecture of my chronic-disease meal companion app.
+
 Flutter source slice for a multi-disease meal companion: photo / text meal logging with rule-based red–yellow–green advice for gout, diabetes, and hypertension (heart-care).
 
 This repository is a **core Dart + rule-engine sample for architecture review**. It is **not** a complete store-ready project.
@@ -37,10 +39,10 @@ This repository is a **core Dart + rule-engine sample for architecture review**.
 lib/
 ├── main.dart
 ├── api/          # HTTP client (recognize / advice / daily / nutrition)
-├── models/
+├── models/       # meal / dish / API DTOs
 ├── pages/        # home, recognize, result, manual input, daily, about, gate check
-├── state/
-└── theme/        # brand + shared copy
+├── state/        # disease mode, meal log, preferences
+└── theme/        # brand colors + shared copy
 
 engine/
 ├── engine.py                 # gout / diabetes / hypertension engines
